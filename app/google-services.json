@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "368558709628",
+    "firebase_url": "https://database-fee8a-default-rtdb.firebaseio.com",
+    "project_id": "database-fee8a",
+    "storage_bucket": "database-fee8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368558709628:android:7740f68f41b1a66c06a2f9",
+        "android_client_info": {
+          "package_name": "com.example.adminapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzA1BHc6XedfH5MXkYzKN4azWGrTneZFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
