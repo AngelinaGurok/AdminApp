@@ -2,6 +2,7 @@ package com.example.adminapp.database
 
 class RouteInfo ()
 {
+    var id : String
     var depPoint : String
     var arrivalPoint : String
     var depTime : String
@@ -11,6 +12,7 @@ class RouteInfo ()
     var date : String
 
     init {
+        id = ""
         depPoint = ""
         arrivalPoint = ""
         depTime = ""
@@ -22,6 +24,7 @@ class RouteInfo ()
 
     constructor(depPoint : String, arrivalPoint : String, depTime : String,
                 arrivalTime : String, tickets : String, price : String, date : String) : this(){
+        this.id = "$date/$depPoint$arrivalPoint/$depTime-$arrivalTime"
         this.depPoint = depPoint
         this.arrivalPoint = arrivalPoint
         this.depTime = depTime
@@ -32,6 +35,7 @@ class RouteInfo ()
     }
 
     constructor(route : RouteInfo) : this(){
+        id = route.id
         depPoint = route.depPoint
         arrivalPoint = route.arrivalPoint
         depTime = route.depTime

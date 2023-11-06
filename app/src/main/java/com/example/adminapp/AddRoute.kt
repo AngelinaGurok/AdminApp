@@ -43,7 +43,7 @@ class AddRoute : AppCompatActivity() {
                     // Set the selected date using the values received from the DatePicker dialog
                     selectedDate.set(year, monthOfYear, dayOfMonth)
                     // Create a SimpleDateFormat to format the date as "dd/MM/yyyy"
-                    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+                    val dateFormat = SimpleDateFormat("yyyy/MM/dd", Locale.getDefault())
                     // Format the selected date into a string
                     val formattedDate = dateFormat.format(selectedDate.time)
                     // Update the TextView to display the selected date with the "Selected Date: " prefix
@@ -72,8 +72,8 @@ class AddRoute : AppCompatActivity() {
                 binding.SeatsAmountText.text.toString(), binding.PriceText.text.toString(),
                 binding.DateText.text.toString())
 
-
-
+            record = DataRecording(route)
+            record.addToDatabase(route)
         }
 
     }
